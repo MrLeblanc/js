@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>$属性</title>
+    <style media="screen">
+      .active{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+
+    </div>
+    <script type="text/javascript" src="jquery-1.11.1.js"></script>
+    <script type="text/javascript">
+    var p = $("<h1>this is a box</h1>")
+      $(".box").before(p);
+      $(".box").addClass("active")
+    </script>
+  </body>
+</html>
